@@ -1,12 +1,13 @@
 import React from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
+import Quote from "components/Typography/Quote.js";
 
 // @material-ui/icons
 import Dashboard from "@material-ui/icons/Dashboard";
 import Schedule from "@material-ui/icons/Schedule";
 import List from "@material-ui/icons/List";
-
+import img from "assets/img/undraw_stepping_up_g6oo.png"
 // core components
 import GridContainer from "components/Grid/GridContainer.js";
 import GridItem from "components/Grid/GridItem.js";
@@ -23,20 +24,20 @@ export default function SectionPills() {
       <div className={classes.container}>
         <div id="navigation-pills">
           <div className={classes.title}>
-            <h3>Navigation Pills</h3>
+            <h2>Why Contribute?</h2>
           </div>
           <div className={classes.title}>
             <h3>
-              <small>With Icons</small>
+              <small>Well it's simple!</small>
             </h3>
           </div>
           <GridContainer>
-            <GridItem xs={12} sm={12} md={8} lg={6}>
+            <GridItem>
               <NavPills
                 color="primary"
                 tabs={[
                   {
-                    tabButton: "Dashboard",
+                    tabButton: "Community Impact",
                     tabIcon: Dashboard,
                     tabContent: (
                       <span>
@@ -65,7 +66,7 @@ export default function SectionPills() {
                     )
                   },
                   {
-                    tabButton: "Schedule",
+                    tabButton: "Economic Impact",
                     tabIcon: Schedule,
                     tabContent: (
                       <span>
@@ -87,7 +88,7 @@ export default function SectionPills() {
                     )
                   },
                   {
-                    tabButton: "Tasks",
+                    tabButton: "Other",
                     tabIcon: List,
                     tabContent: (
                       <span>
@@ -117,69 +118,12 @@ export default function SectionPills() {
                   }
                 ]}
               />
+                <img src={img} height="550" width="650" align = "center"/>
             </GridItem>
-            <GridItem xs={12} sm={12} md={12} lg={6}>
-              <NavPills
-                color="rose"
-                horizontal={{
-                  tabsGrid: { xs: 12, sm: 4, md: 4 },
-                  contentGrid: { xs: 12, sm: 8, md: 8 }
-                }}
-                tabs={[
-                  {
-                    tabButton: "Dashboard",
-                    tabIcon: Dashboard,
-                    tabContent: (
-                      <span>
-                        <p>
-                          Collaboratively administrate empowered markets via
-                          plug-and-play networks. Dynamically procrastinate B2C
-                          users after installed base benefits.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically visualize customer directed convergence
-                          without revolutionary ROI. Collaboratively
-                          administrate empowered markets via plug-and-play
-                          networks. Dynamically procrastinate B2C users after
-                          installed base benefits.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically visualize customer directed convergence
-                          without revolutionary ROI. Collaboratively
-                          administrate empowered markets via plug-and-play
-                          networks. Dynamically procrastinate B2C users after
-                          installed base benefits.
-                        </p>
-                      </span>
-                    )
-                  },
-                  {
-                    tabButton: "Schedule",
-                    tabIcon: Schedule,
-                    tabContent: (
-                      <span>
-                        <p>
-                          Efficiently unleash cross-media information without
-                          cross-media value. Quickly maximize timely
-                          deliverables for real-time schemas.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically maintain clicks-and-mortar solutions
-                          without functional solutions. Dramatically visualize
-                          customer directed convergence without revolutionary
-                          ROI. Collaboratively administrate empowered markets
-                          via plug-and-play networks. Dynamically procrastinate
-                          B2C users after installed base benefits.
-                        </p>
-                      </span>
-                    )
-                  }
-                ]}
-              />
+            <GridItem>
+          
             </GridItem>
+            
           </GridContainer>
         </div>
       </div>

@@ -7,12 +7,14 @@ const componentsStyle = {
     textAlign: "left"
   },
   title: {
-    fontSize: "4.2rem",
-    fontWeight: "600",
+    color: "black",
+    fontSize: "5.2rem",
+    fontWeight: "900",
     display: "inline-block",
     position: "relative"
   },
   subtitle: {
+    color: "black",
     fontSize: "1.313rem",
     maxWidth: "500px",
     margin: "10px 0 0"
