@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="app.css">
+    <title>Shrey Work </title>
+</head>
+<body>
+
+<div class="Container">
+
+    <form id="Business Form" method="post" action="http://localhost:5000/api/listings/createListing">
+
+
+        <label for="businessName">Business name: </label>
+        <input type="text" id="businessName" name="businessName"><br><br>
+
+        <label for="businessInfo">Business Info: </label>
+        <input type="text" id="businessInfo" name="businessInfo"><br><br>
+
+        <label for="city">City: </label>
+        <input type="text" id="city" name="city"><br><br>
+
+        <label for="loanPurpose">Why do you need this money:</label> 
+        <input type="text" id="loanPurpose" name="loanPurpose"><br><br>
+
+        <label for="amountNeeded">How much money do you need?</label>
+        <select name="amountNeeded" id="amountNeeded">
+            <option value="10">$10</option>
+            <option value="100">$100</option>
+            <option value="1000">$1000</option>
+            <option value="10000">$10000</option>
+        </select><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
