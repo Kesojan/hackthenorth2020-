@@ -24,11 +24,11 @@ export default function SectionPills() {
       <div className={classes.container}>
         <div id="navigation-pills">
           <div className={classes.title}>
-            <h2>Why Contribute?</h2>
+            <h1>Why BubbleBuy?</h1>
           </div>
           <div className={classes.title}>
             <h3>
-              <small>Well it's simple!</small>
+              <h4>You no longer need to spend hours researching the local business that sells exactly what you need. You have BubblyBuy!"</h4>
             </h3>
           </div>
           <GridContainer>
@@ -41,27 +41,14 @@ export default function SectionPills() {
                     tabIcon: Dashboard,
                     tabContent: (
                       <span>
-                        <p>
-                          Collaboratively administrate empowered markets via
-                          plug-and-play networks. Dynamically procrastinate B2C
-                          users after installed base benefits.
-                        </p>
+                        <h3>
+                        You get what you want to buy through BubbleBuy and have the opportunity to increase job stability for nearby business owners. 
+                        </h3>
+                        <h3>
+                        Every dollar you spend goes directly towards financially supporting each business owner.
+                         Not only that, but local shops often provide more sustainable shopping alternatives and will always aim to create a great experience for you!
+                        </h3>
                         <br />
-                        <p>
-                          Dramatically visualize customer directed convergence
-                          without revolutionary ROI. Collaboratively
-                          administrate empowered markets via plug-and-play
-                          networks. Dynamically procrastinate B2C users after
-                          installed base benefits.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically visualize customer directed convergence
-                          without revolutionary ROI. Collaboratively
-                          administrate empowered markets via plug-and-play
-                          networks. Dynamically procrastinate B2C users after
-                          installed base benefits.
-                        </p>
                       </span>
                     )
                   },
@@ -70,49 +57,33 @@ export default function SectionPills() {
                     tabIcon: Schedule,
                     tabContent: (
                       <span>
-                        <p>
-                          Efficiently unleash cross-media information without
-                          cross-media value. Quickly maximize timely
-                          deliverables for real-time schemas.
-                        </p>
+                        <h3>
+                        98.2% of all Canadian companies are small businesses. 
+                        These companies provide 97.9% of all employed individuals an income, a new opportunity. 
+                        However, due to COVID-19, 73% of businesses have experienced a negative economic downfall. T
+                        his downfall has a ripple effect on the overall Canadian economy. 
+                        With over 30% of Canada’s GDP reliant on small businesses, there is a pressing need to act fast, to shop local.
+                        
+                        </h3>
                         <br />
-                        <p>
-                          Dramatically maintain clicks-and-mortar solutions
-                          without functional solutions. Dramatically visualize
-                          customer directed convergence without revolutionary
-                          ROI. Collaboratively administrate empowered markets
-                          via plug-and-play networks. Dynamically procrastinate
-                          B2C users after installed base benefits.
-                        </p>
+                        <h3>
+                        BubbleBuy makes this process simple and easy for you!
+                        </h3>
                       </span>
                     )
                   },
                   {
-                    tabButton: "Other",
+                    tabButton: "Shop with Ease",
                     tabIcon: List,
                     tabContent: (
                       <span>
-                        <p>
-                          Collaboratively administrate empowered markets via
-                          plug-and-play networks. Dynamically procrastinate B2C
-                          users after installed base benefits.
-                        </p>
+                        <h3>
+                        Great User Experience
+You no longer need to spend hours researching local shops and visiting countless websites to find what you need. 
+With one click of a button, you can see all the nearby small businesses that sell exactly what you want.
+                        </h3>
                         <br />
-                        <p>
-                          Dramatically visualize customer directed convergence
-                          without revolutionary ROI. Collaboratively
-                          administrate empowered markets via plug-and-play
-                          networks. Dynamically procrastinate B2C users after
-                          installed base benefits.
-                        </p>
-                        <br />
-                        <p>
-                          Dramatically visualize customer directed convergence
-                          without revolutionary ROI. Collaboratively
-                          administrate empowered markets via plug-and-play
-                          networks. Dynamically procrastinate B2C users after
-                          installed base benefits.
-                        </p>
+                   
                       </span>
                     )
                   }

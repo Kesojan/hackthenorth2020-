@@ -27,7 +27,7 @@ import SectionCompletedExamples from "./Sections/SectionCompletedExamples.js";
 import SectionLogin from "./Sections/SectionLogin.js";
 import SectionExamples from "./Sections/SectionExamples.js";
 import SectionDownload from "./Sections/SectionDownload.js";
-
+import Maps from "./Sections/Maps.js";
 import styles from "assets/jss/material-kit-react/views/components.js";
 
 const useStyles = makeStyles(styles);
@@ -38,7 +38,7 @@ export default function Components(props) {
   return (
     <div>
       <Header
-        brand="Scale.io"
+        brand="BubbleBuy"
         rightLinks={<HeaderLinks />}
         fixed
         color="black"
@@ -53,7 +53,7 @@ export default function Components(props) {
           <GridContainer>
             <GridItem>
               <div className={classes.brand}>
-                <h1 className={classes.title}>Scale.io</h1>
+                <h1 className={classes.title}>BubbleBuy</h1>
                 <h3 className={classes.subtitle}>
                   Helping smaller companies scale rapidly
                 </h3>
@@ -64,10 +64,10 @@ export default function Components(props) {
       </Parallax>
 
       <div className={classNames(classes.main, classes.mainRaised)}>
+      <Maps/>
       <SectionPills />
-
+      
        <SectionTypography />
-       <SectionPills />
         <GridItem md={12} className={classes.textCenter}>
           <Link to={"/login-page"} className={classes.link}>
             <Button color="primary" size="lg" simple>
@@ -75,8 +75,6 @@ export default function Components(props) {
             </Button>
           </Link>
         </GridItem>
-        <SectionExamples />
-        <SectionDownload />
       </div>
       <Footer />
     </div>

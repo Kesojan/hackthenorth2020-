@@ -6,7 +6,12 @@ import { makeStyles } from "@material-ui/core/styles";
 
 // Modal
 import TextField from "@material-ui/core/TextField";
-
+import img2 from "assets/img/olives-and-grace.jpg"
+import img3 from "assets/img/37b2a2aa-10f9-483c-a405-fd5993776d09-large16x9_Image.jpeg"
+import img4 from "assets/img/images-2.jpeg"
+import img5 from "assets/img/-methode-times-prodmigration-web-bin-1432258c-cd01-3730-a1ae-859a4c91e1fc.jpg"
+import img6 from "assets/img/1*nB8_DAL8WSnhDXMAs4jiqg.jpeg"
+import img7 from "assets/img/IMG_3703-scaled-e1582740694450.jpeg"
 import DialogTitle from "@material-ui/core/DialogTitle";
 import DialogContent from "@material-ui/core/DialogContent";
 import DialogActions from "@material-ui/core/DialogActions";
@@ -45,33 +50,33 @@ import styles from "assets/jss/material-kit-react/views/componentsSections/typog
 const useStyles = makeStyles(styles);
 const tileData = [
   {
-    img: image,
-    title: "Company 1",
+    img: img2,
+    title: "Andy's Shop",
     author: "Toronto, ON",
   },
   {
-    img: image,
-    title: "Company 2",
+    img: img3,
+    title: "Royal Jewelery",
     author: "Toronto, ON",
   },
   {
-    img: image,
-    title: "Company 3",
+    img: img4,
+    title: "Ben's Shop",
     author: "Toronto, ON",
   },
   {
-    img: image,
-    title: "Company 4",
+    img: img6,
+    title: "Mark's Company",
     author: "Toronto, ON",
   },
   {
-    img: image,
-    title: "Company 5",
+    img: img5,
+    title: "Antique",
     author: "Toronto, ON",
   },
   {
-    img: image,
-    title: "Image",
+    img: img7,
+    title: "Botique",
     author: "Toronto, ON",
   },
 ];
@@ -94,6 +99,7 @@ export default function SectionTypography() {
   return (
     <div className={classes.container}>
       <div id="typography">
+      
         <div className={classes.title}>
           <br></br>
           <h1 align="center">Our Philosophy </h1>
@@ -103,14 +109,12 @@ export default function SectionTypography() {
 
         </div>
 
-        
-
         <div></div>
         <div className={classes.section}>
           <div className={classes.root}>
-            <GridList cellHeight={400} className={classes.gridList}>
+            <GridList cellHeight={500} className={classes.gridList}>
               
-              <GridListTile key="Subheader" cols={2} style={{ height: "auto" }}>
+              <GridListTile key="Subheader" cols={3} style={{ height: "auto" }}>
                 <ListSubheader component="div">All Retailers within 10 KM proximity</ListSubheader>
               </GridListTile>
               {tileData.map((tile) => (
@@ -124,7 +128,7 @@ export default function SectionTypography() {
                       <IconButton aria-label={`info about ${tile.title}`} className={classes.icon}>
                         <InfoIcon />
                         <Button variant="outlined" color="primary" onClick={handleClickOpen}>
-                          Loan Options
+                          Buy Options
                         </Button>
                         <Dialog
                           open={open}
@@ -134,8 +138,9 @@ export default function SectionTypography() {
                           <DialogTitle id="form-dialog-title">Payment Plan's</DialogTitle>
                           <DialogContent>
                             <DialogContentText>
-                              Please enter the amount of money you wish to loan!
+                              Please enter the amount you wish to purchase!
                             </DialogContentText>
+
                             <TextField
                               autoFocus
                               margin="dense"
@@ -161,40 +166,7 @@ export default function SectionTypography() {
               ))}
             </GridList>
           </div>
-      
-          <GridContainer>
-            <GridItem xs={12} sm={2}>
-              <h4>Rounded Image</h4>
-              <img src={image} alt="..." className={classes.imgRounded + " " + classes.imgFluid} />
-            </GridItem>
-            <GridItem xs={12} sm={2} className={classes.marginLeft}>
-              <h4>Circle Image</h4>
-              <img
-                src={image}
-                alt="..."
-                className={classes.imgRoundedCircle + " " + classes.imgFluid}
-              />
-            </GridItem>
-            <GridItem xs={12} sm={2} className={classes.marginLeft}>
-              <h4>Rounded Raised</h4>
-              <img
-                src={image}
-                alt="..."
-                className={classes.imgRaised + " " + classes.imgRounded + " " + classes.imgFluid}
-              />
-            </GridItem>
-            <GridItem xs={12} sm={2} className={classes.marginLeft}>
-              <h4>Circle Raised</h4>
-              <img
-                src={image}
-                alt="..."
-                className={
-                  classes.imgRaised + " " + classes.imgRoundedCircle + " " + classes.imgFluid
-                }
-              />
-            </GridItem>
-          </GridContainer>
-          <GridContainer />
+    
         </div>
         <div className={classes.space50} />
       </div>
